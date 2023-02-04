@@ -25,11 +25,14 @@ function App() {
         reminder:false,
     }
 ])
+//Delete task 
+const deleteTask = (id) =>{
+  console.log('delete',id)
+}
   return (
     <div className="App">
-      <h1>Hello form React</h1>
       <Header  />
-      <Tasks tasks={tasks}/>
+      <Tasks tasks={tasks} onDelete={deleteTask}/>
      
     </div>
   );
